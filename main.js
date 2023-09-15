@@ -57,11 +57,11 @@ const ringModesCommonSettings = {
 };
 
 const wristModelCommonSettings = {
-  URL: 'assets/debug/Watch1.glb',
+  URL: 'assets/debug/Watch2.glb',
  
-  scale: 75.35 * 1.462,
-  offset: [0, 3, -0.504],
-  quaternion: [0.5, -0.5, 0.5, 1],  // Format: X,Y,Z,W (and not W,X,Y,Z like Blender)
+  scale: 1.35 * 1.462,
+  offset: [0.076, 3, -0.504],
+  quaternion: [0, 0, 0, 1],  // Format: X,Y,Z,W (and not W,X,Y,Z like Blender)
 };
 
 const ringModelCommonSettings = {
@@ -369,7 +369,7 @@ function add_softOccluder(VTOModeSettings){
   // add a soft occluder (for the wrist for example):
   const occluderRadius = VTOModeSettings.occluderRadiusRange[1];
   const occluderMesh = new THREE.Mesh(
-    new THREE.CylinderGeometry(occluderRadius, occluderRadius, VTOModeSettings.occluderHeight, 32, 1, true),
+    new THREE.CylinderGeometry(occluderRadius, occluderRadius, VTOModeSettings.occluderHeight, 10, 1, true),
     new THREE.MeshNormalMaterial()
   );
   const dr = VTOModeSettings.occluderRadiusRange[1] - VTOModeSettings.occluderRadiusRange[0];
