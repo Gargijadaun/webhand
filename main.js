@@ -57,9 +57,10 @@ const ringModesCommonSettings = {
 };
 
 const wristModelCommonSettings = {
-  URL: 'assets/debug/watch.glb',
+  URL: 'assets/debug/Watch1.glb',
+ 
   scale: 75.35 * 1.462,
-  offset: [0.076, -0.916, -0.504],
+  offset: [0, 3, -0.504],
   quaternion: [0.5, -0.5, 0.5, 1],  // Format: X,Y,Z,W (and not W,X,Y,Z like Blender)
 };
 
