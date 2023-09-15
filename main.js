@@ -65,7 +65,7 @@ const wristModelCommonSettings = {
 };
 
 const ringModelCommonSettings = {
-  URL: 'assets/debug/ringPlaceHolder2.glb',
+  URL: './assets/debug/ringPlaceHolder2.glb',
       
   scale: 0.421,
   offset: [-1.66, -11.91, 0.26],
